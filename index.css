@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+body{
+    width: calc(100vw-16px);
+    height: calc(100vh-16px);
+    
+    overflow-x: hidden;
+    background: hsla(0, 100%, 71%, 1);
+    background: linear-gradient(180deg, hsla(0, 100%, 71%, 1) 21%, hsla(48, 100%, 62%, 1) 48%, hsla(128, 48%, 61%, 1) 76%, hsla(215, 100%, 65%, 1) 100%);
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+.container{
+   
+    max-height:100%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    margin:2rem auto;
+}
+.title{
+    text-align: center;
+    padding:0.5rem;
+    
+}
+input{
+    margin: 0.5em 0;
+    font-family: 'Kanit', sans-serif;
+    padding: 0.7em 1.1em;
+    font-size: 1.1em
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;  
+}
+.toggle-text{
+    font-size: 20px;
+}
+.toggle-btn{
+    height: 40px;
+    width: 80px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding:4px;
+    margin: 0 10px;
+}
+.inner-circle{
+    width: 34px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(116, 114, 114);
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle{
+    transform: translateX(30px);
+    background-color: #333;
+
+}
+
+.unselected{
+    opacity: 0.25;
+}
+
+label{
+    display: block;
+    font-size: 20px
+    
+}
+.box{
+    margin:1.5rem 0;
+    width: 100%;
+    height: 4em;
+    border: 1px solid rgb(68, 65, 65);
+    background-color:rgb(221, 220, 220)
+}
